@@ -1,0 +1,66 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{!-- The main content area --}}
+<main id="site-main" class="site-main outer">
+    <div id="fullpage">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="px-md-5 p-3 col-md-6 d-flex flex-column align-items-start justify-content-center">
+                        <h1 class="site-title">
+                                {{@site.title}}
+                        </h1>
+                        <p>간단한 설명 적기</p>
+                        <div class="row"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="rounded-circle mx-auto d-block" src="{{img_url @site.logo size=" m"}}"="m"}}""="}}""" alt="{{@site.title}}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+<div class="section">
+    <div class="py-5 text-center">
+        <div class="container">
+            <div class="row"></div>
+            <div class="row">
+                <div class="col-lg-4 col-8 order-2 order-lg-1">
+                    <img
+                        class="img-fluid d-block"
+                        src="./assets/img/html.png"></div>
+                    <div
+                        class="col-lg-2 col-4 d-flex flex-column justify-content-between order-3 order-lg-2">
+                        <img
+                            class="img-fluid d-block"
+                            src="./assets/img/java.jpg">
+                            <img
+                                class="img-fluid d-block"
+                                src="./assets/img/js.png"></div>
+                            <div
+                                class="px-md-5 p-3 d-flex flex-column justify-content-center col-lg-6 order-1 order-lg-3">
+                                <i class="d-block fa fa-circle fa-3x mb-2 text-muted"></i>
+                                <h1>제목적기</h1>
+                                <p class="lead" style="font-size: 1.2em;">내용 적기</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+    <script>
+        new fullpage('#fullpage', {
+            //하단은 옵션
+            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+            autoScrolling: true,
+            scrollHorizontally: true,
+            lookAnchors: false,
+            navigation: true,
+            sectionsColor: ['white', 'orange'],
+            showActiveSelector: '.section',
+            slideSelector: '.silde',
+            slideNavigation: false
+        });
+        /* ./assets/img/sd.gif */
+    </script>
+</main>
